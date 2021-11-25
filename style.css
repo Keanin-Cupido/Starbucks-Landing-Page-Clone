@@ -31,6 +31,10 @@ p{
     line-height: 1.7;
 }
 
+section a {
+    color: #fff;
+}
+
 /* Navbar */
 .navbar{
     width: 100%;
@@ -92,6 +96,22 @@ p{
 
 .navbar-nav-right li:nth-child(2) {
     margin: 0 5px;
+}
+
+/* Box */
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid Styles */
+.grid-col-2 {
+    display: grid;
+    
 }
 
 /* Buttons */
@@ -191,4 +211,26 @@ p{
 
 .py-lg {
     padding: 40px 0;
+}
+
+@media(max-width: 960px){
+    .text-xl {
+        font-size: 30px;
+    }
+
+    .text-lg {
+        font-size: 25px;
+    }
+
+    .text-md {
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 1440px){
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
